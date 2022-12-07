@@ -1,0 +1,294 @@
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Bebas+Neue|Hind:wght|Marmelad|Scada|Concert+One&display=swap');
+/* Fade in animation for page load */
+@keyframes FadeIn{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1
+  }
+}
+/* Body style */
+.body_CSS {
+  background-color: #1B1C1E;
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  animation: FadeIn 1s;
+  overflow-y: overlay;
+}
+::selection {
+  color: white; 
+  background: #ff6348;
+  border-radius: 5px;
+}
+::-webkit-scrollbar{
+  width: 5px;  
+}
+::-webkit-scrollbar-thumb{
+  background-color: #1B9CFC;
+  border-radius: 5px;
+}
+/* Top button style */
+.topButton_CSS{
+  left: 94%;
+  font-family: 'Concert One', cursive;
+  color: white;
+  font-weight: bolder;
+  padding: 11px 10px 14px 10px;
+  background-color: #1f2227;
+  border-radius: 50%;
+  position: fixed;
+  animation: FadeIn 1s;
+  transition: 100ms;
+  display: none;
+  border: 0.5px solid orange;
+  text-shadow: 0px 0px 1px #cc8500; 
+  z-index: 10000;
+}
+.topButton_CSS:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.header_CSS{
+  height: 160px;
+  border-radius: 5px;
+  /* background-color: #2f3640; */
+  background-color: #353b48;
+  margin: 10px auto 0px auto;
+  color:white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Faster One', cursive;
+}
+.titlePartOne_CSS{
+  font-size: 160px;  
+  letter-spacing: 20px;
+  margin: -15px 20px auto 100px;
+  color: #25CCF7;
+  transition: 400ms;
+}
+.titlePartOne_CSS:hover{
+  color: #fc5c65;
+  cursor: pointer;
+}
+.titlePartTwo_CSS{
+  font-size: 60px;  
+  margin-top: 60px;
+  margin-left: 30px;
+  letter-spacing: 20px;
+  color: #dfe4ea;
+}
+
+/* Search div style */
+.searchDiv_CSS{    
+  display: flex;
+  margin: 1px auto 0px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;  
+  background: repeating-linear-gradient(
+                45deg,
+                #2f3640,
+              #2f3640 10px,
+              #2f3640 0px,
+              #2f3640 11px              
+                );                
+}
+/* Show's  list in div style */
+.showsDivSelect_CSS{
+  display: flex;
+  margin: 0;
+  height: 72px;
+}
+/* Episode's list in div style */
+.episodeDivSelect_CSS{
+  display: flex;
+  margin: 0;
+  height: 72px;
+}
+/* Search input div style for episode's */
+.searchDivInput_CSS{
+  height: 72px;
+  display: flex;
+  margin: 0;
+}
+/* Show's list select style */
+.showsListSelect_CSS{
+  min-width: 150px;
+  height: 35px;
+  margin: auto;
+  border-radius: 3px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  background-color: #1a1d2159;
+  color: white;
+  letter-spacing: 2px;
+  text-indent: 5px;
+  border: none;
+}
+.showsListSelect_CSS:focus{
+  outline: 1px solid #ff7f50;
+}
+.showsListSelect_CSS *{
+  color: #1a1d21;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+}
+/* Episode's list select style */
+.episodeListSelect_CSS{  
+  min-width: 150px;
+  height: 35px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #1a1d2159;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-indent: 5px;
+  border: none;
+}
+.episodeListSelect_CSS:focus{
+  outline: 1px solid #ff7f50;
+}
+.episodeListSelect_CSS *{  
+  letter-spacing: 5px;
+  text-indent: 5px;
+  color: #1a1d21;
+  background-color: #ffffff;
+}
+
+.episodeInput_CSS {
+  min-width: 150px;
+  margin: auto;  
+  height: 35px;
+  text-indent: 15px;
+  border-radius: 3px;
+  border: none;  
+  background-color: #1a1d2159;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.episodeInput_CSS:focus{
+  outline: 1px solid #ff7f50;
+}
+.episodeInput_CSS::-webkit-input-placeholder{
+  color: white;
+}
+
+.searchResualt_CSS{    
+  text-shadow: 0px 0px 5px #ff7f50;  
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;     
+  height: 40px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 15px;
+  border-radius: 3px;
+  color: white;  
+  border: none;
+  letter-spacing: 3px;  
+}
+.highlight_CSS{
+  background-color: #ff4757;
+  border-radius: 2px;  
+}
+
+.mainDiv_CSS {
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;  
+  transition: transform .1s;
+}
+.episodeDiv_CSS {  
+  width: 320px;
+  height: 460px;
+  margin: 5px 5px 5px 5px;
+  background-color: #1f2227;
+  color: #f5f6fa;
+  border-radius: 0px 5px 5px 5px;
+  border: 1px solid #1f2227;
+  animation: FadeIn 1s;
+  transition: 200ms;
+}
+.episodeDiv_CSS:hover {  
+  cursor: pointer;
+  transform: scale(1.01); 
+  transition: 200ms;
+  box-shadow: 0px 0px 0px 1px #ff7f50;
+}  
+
+.episodeTitle_CSS {
+  font-family: "Bebas Neue", cursive;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+  border-left: 5px solid #2ecc71;   
+  text-shadow: 0px 0px 2px #cc8500;  
+  border-top-right-radius: 3px;
+  letter-spacing: 1px;
+  min-width: 315px;
+  height: 35px;
+  margin: 0px;
+  color: white;
+  background-color: #202329;
+}
+.episodeImgDiv_CSS{
+  width: 300px;
+  height: 168px;
+  margin: 10px auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272a30;
+  color: #EE5A24;
+  border-radius: 5px;
+}
+.episodeImg_CSS {
+  min-width: 300px;
+  height: 168px;
+  border-radius: 5px;
+}
+.episodeImgP_CSS{
+  align-items: center;
+  font-family: 'Concert One', cursive;
+}
+.episodeSummaryDiv_CSS{
+  font-family: 'Marmelad', sans-serif;
+  height: 180px;  
+  overflow: auto;
+}
+.episodeSummaryLabel_CSS{
+  font-family: 'Scada', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px 10px;
+}
+.episodeSummary_CSS {
+  width: 300px;
+  margin: 0px 10px 10px 10px;
+  margin-top: 8px;
+  font-stretch: expanded;
+  font-family: 'Scada', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.5em;
+  overflow: auto;
+  color: #c8d6e5;
+}
+.nothingToShow_CSS{
+  align-items: center;
+  font-family: 'Concert One', cursive;
+  color: #cc8500;
+  font-size: larger;
+}
